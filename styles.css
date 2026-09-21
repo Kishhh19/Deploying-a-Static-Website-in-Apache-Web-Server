@@ -1,11 +1,11 @@
 :root {
-  --ink: #18211e;
-  --muted: #66716d;
-  --paper: #f4f2ec;
-  --line: #d7d8cf;
-  --moss: #8da48d;
-  --soft-moss: #dce6d6;
-  --orange: #e87442;
+  --ink: #17243a;
+  --muted: #647084;
+  --paper: #f7f9fc;
+  --line: #dce2ea;
+  --moss: #eaf0f7;
+  --soft-moss: #eef4fb;
+  --orange: #2f6fed;
   --mono: "DM Mono", Consolas, monospace;
   --sans: "Manrope", "Segoe UI", sans-serif;
 }
@@ -16,21 +16,21 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 a { color: inherit; }
 .page-shell { display: grid; grid-template-columns: minmax(280px, 31vw) 1fr; min-height: 100vh; }
 .profile-rail { position: sticky; top: 0; display: flex; min-height: 100vh; flex-direction: column; padding: 48px clamp(32px, 5vw, 82px); background: var(--moss); overflow: hidden; }
-.profile-rail::after { content: ""; position: absolute; width: 360px; height: 360px; right: -180px; bottom: 9%; border: 1px solid rgba(24, 33, 30, .18); border-radius: 50%; box-shadow: 0 0 0 34px rgba(24, 33, 30, .04), 0 0 0 68px rgba(24, 33, 30, .04); pointer-events: none; }
+.profile-rail::after { content: ""; position: absolute; width: 360px; height: 360px; right: -180px; bottom: 9%; border: 1px solid rgba(23, 36, 58, .1); border-radius: 50%; box-shadow: 0 0 0 34px rgba(23, 36, 58, .025), 0 0 0 68px rgba(23, 36, 58, .025); pointer-events: none; }
 .monogram { display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 68px; border: 1px solid var(--ink); border-radius: 50%; font: 500 13px var(--mono); }
 .eyebrow, .section-label, .section-index, .timeline-meta, dt, .rail-footer, .education-row { color: var(--muted); font: 500 11px var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .profile-rail .eyebrow { display: flex; justify-content: space-between; margin: 0 0 20px; color: var(--ink); }
 .profile-rail h1 { margin: 0; font-size: clamp(42px, 5vw, 74px); line-height: .94; letter-spacing: -.065em; font-weight: 700; }
 em { color: var(--orange); font-style: normal; }
 .profile-rail .role { max-width: 220px; margin: 26px 0 36px; font-size: 14px; line-height: 1.5; }
-.rail-rule { width: 100%; border-top: 1px solid rgba(24, 33, 30, .35); }
+.rail-rule { width: 100%; border-top: 1px solid rgba(23, 36, 58, .18); }
 .contact-list { display: grid; gap: 22px; margin: 30px 0 0; }
 .contact-list div { display: grid; gap: 6px; }
-dt { color: rgba(24, 33, 30, .6); }
+dt { color: rgba(23, 36, 58, .6); }
 dd { margin: 0; font-size: 13px; }
 .availability { display: flex; align-items: center; gap: 7px; }
 .availability span { width: 7px; height: 7px; background: var(--orange); border-radius: 50%; }
-.rail-footer { display: flex; flex-direction: column; gap: 8px; margin-top: auto; color: rgba(24, 33, 30, .58); }
+.rail-footer { display: flex; flex-direction: column; gap: 8px; margin-top: auto; color: rgba(23, 36, 58, .58); }
 .rail-footer strong { color: var(--ink); font: 500 11px var(--mono); }
 .content-column { min-width: 0; padding: 0 clamp(28px, 7vw, 120px); }
 .topbar { display: flex; justify-content: space-between; align-items: center; height: 96px; border-bottom: 1px solid var(--line); }
