@@ -15,6 +15,19 @@ git push -u origin main
 
 ## Prepare Amazon Linux EC2
 
+For the current instance shown in the AWS console:
+
+- Public IP: `15.135.234.242`
+- Website URL after deployment: `http://15.135.234.242`
+
+From PowerShell on your workstation, connect with the key file assigned when the instance was created:
+
+```powershell
+ssh -i "C:\path\to\your-key.pem" ec2-user@15.135.234.242
+```
+
+If SSH reports a timeout, allow inbound SSH (TCP port 22) from your current IP in the instance security group. If the website later reports a timeout, also allow inbound HTTP (TCP port 80) from `0.0.0.0/0`.
+
 Connect with the SSH command from the EC2 console, then run:
 
 ```bash
