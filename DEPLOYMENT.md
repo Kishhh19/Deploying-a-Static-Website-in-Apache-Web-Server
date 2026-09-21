@@ -9,7 +9,7 @@ git init
 git add index.html styles.css DEPLOYMENT.md
 git commit -m "Create CV profile website"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git remote add origin https://github.com/Kishhh19/Deploying-a-Static-Website-in-Apache-Web-Server.git
 git push -u origin main
 ```
 
@@ -30,9 +30,9 @@ For older Amazon Linux images, use `yum` instead of `dnf`.
 
 ```bash
 cd /tmp
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/Kishhh19/Deploying-a-Static-Website-in-Apache-Web-Server.git
 sudo rm -rf /var/www/html/*
-sudo cp -r YOUR-REPOSITORY/* /var/www/html/
+sudo cp -r Deploying-a-Static-Website-in-Apache-Web-Server/* /var/www/html/
 sudo chown -R apache:apache /var/www/html
 sudo systemctl restart httpd
 ```
